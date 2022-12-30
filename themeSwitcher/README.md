@@ -3,6 +3,8 @@
 ## Usage
 
 ```html
+<!-- html -->
+
 <theme-switcher>
 
     <label for="dark">Dark mode</label>
@@ -21,4 +23,19 @@
         value="light"
     />
 </theme-switcher>
+```
+
+
+```css
+/* css */
+
+:root {
+    --background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root.dark {
+        --background-color: grey;
+    }
+}
 ```
