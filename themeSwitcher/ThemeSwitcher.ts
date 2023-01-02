@@ -10,8 +10,9 @@ class ThemeSwitcher extends HTMLElement {
     }
 
     connectedCallback() {
+        this.setAttribute('aria-label', 'Change theme color.');
         this.getSessionStorage();
-    (this.querySelector(`input[value=${this.theme}]`) as HTMLInputElement).checked = true;
+        (this.querySelector(`input[value=${this.theme}]`) as HTMLInputElement).checked = true;
         this.inputs.forEach((i) => i.addEventListener("change", (e) => this.handleToggle(e)));
     }
 
