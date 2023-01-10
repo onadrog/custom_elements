@@ -5,7 +5,12 @@
 ```html
 <!-- html -->
 
-<theme-switcher>
+<theme-switcher
+    id="themeToggle"
+    class="switcher-wrapper"
+    tabindex="0"
+    aria-label="Change theme color."
+>
 
     <label for="dark">Dark mode</label>
     <input
