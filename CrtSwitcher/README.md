@@ -1,7 +1,7 @@
 # CrtSwitcher
 
 Add a crt effect on the screen, 
-** NO FANCY TEXT SHAKING OR LINE TEARING ! **
+**NO FANCY TEXT SHAKING OR LINE TEARING !**
 
 ## Usage
 
