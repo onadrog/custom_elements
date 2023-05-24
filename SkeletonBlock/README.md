@@ -6,7 +6,7 @@
 <!-- html -->
 <article class="card">
     <skeleton-block data-avatar="0" class="card-avatar" ></skeleton-block>
-    <skeleton-block data-height="24" data-width="113px" ></skeleton-block>
+    <skeleton-block data-height="24" data-width="113" ></skeleton-block>
     <skeleton-block data-lines="3" data-width="268" ></skeleton-block>
 </article>
 ```
@@ -14,6 +14,7 @@
 ### Remove elements
 
 ```js
+//js
 
 const data = await fetch("");
 
@@ -24,5 +25,5 @@ const data = await fetch("");
 
 const destroyEvent = new CustomEvent("skeleton_block:destroy");
 const elements = document.querySelectorAll("skeleton-block");
-elements.forEach(e => e.dispatchEvent("skeleton_block:destroy"))
+elements.forEach(e => e.dispatchEvent(destroyEvent))
 ```
