@@ -1,4 +1,4 @@
-![custom elements logo](custome_elements_logo.svg)
+![custom elements logo](custom_elements_logo.svg)
 # Custom Elements
 
 My collection of custom elements.
