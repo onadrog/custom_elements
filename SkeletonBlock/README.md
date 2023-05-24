@@ -10,3 +10,19 @@
     <skeleton-block data-lines="3" data-width="268" ></skeleton-block>
 </article>
 ```
+
+### Remove elements
+
+```js
+
+const data = await fetch("");
+
+/**  do more stuff with your data
+* ...
+* then when your data are ready remove the custom element.
+*/
+
+const destroyEvent = new CustomEvent("skeleton_block:destroy");
+const elements = document.querySelectorAll("skeleton-block");
+elements.forEach(e => e.dispatchEvent("skeleton_block:destroy"))
+```

@@ -42,7 +42,6 @@ class SkeletonBlock extends HTMLElement {
 		this.#nb_lines = parseInt(this.dataset.lines || "0", 10);
 		this.#w = `${parseInt(this.dataset.width || "161", 10)}px`;
 		this.#h = `${parseInt(this.dataset.height || "100", 10)}px`;
-		// new CustomEvent("skeleton_block:destroy");
 	}
 
 	connectedCallback() {
